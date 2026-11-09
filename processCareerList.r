@@ -4,11 +4,10 @@
 #' @param dob the date of birth of the player in YYYYMMDD
 #' @return a clean data frame used for graphing purposes
 processCareerList<-function (morematchmx,dob){
-  datesOfMatches=tournaments=surfaces=wins=nameOfOpponents=opponentDateOfBirths=c()
+  datesOfMatches=opponentDateOfBirths=wins=c()
   for (i in 1:length(morematchmx)){
     datesOfMatches=c(datesOfMatches,morematchmx[i][[1]][1])
     wins=c(wins,as.integer(morematchmx[i][[1]][5]=="W"))
-    nameOfOpponents=c(nameOfOpponents,morematchmx[i][[1]][12])
     opponentDateOfBirths=c(opponentDateOfBirths,morematchmx[i][[1]][17])
   }
   playerAges=as.numeric(ymd(datesOfMatches)-ymd(dob))/365.2425

@@ -13,8 +13,11 @@ getCareer <- function(playerName,dob){
 context=v8()
 context$source("career.js")
 morematchmx=context$get("morematchmx")
-  if(class(morematchmx)=="list"){
+  if(class(morematchmx)[1]=="list"){
   return(processCareerList(morematchmx,dob))
+  }
+  else{
+    return(processCareerArray(morematchmx,dob))
   }
 }
   
