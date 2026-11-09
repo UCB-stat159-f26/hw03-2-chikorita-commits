@@ -8,17 +8,17 @@ This assignment is the continuation of HW1 and HW2. This time you will take the 
 
 Your package should have two primary functions:
 
-1) Function to get the career's data of a given player
+1)  Function to get the career's data of a given player
 
     - Input: name of player, e.g. `"serena williams"`, or `"Serena Williams"` or `"SerenaWilliams"`
     - Output: data frame to be used for graphing purposes (like the `serena` data frame of HW2)
     - If the user provides an invalid name of a player (`"Gaston Sanchez"`), then it should return a meaningful error message.
 
-2) Function to make the scatter plot---like the plot you graphed in HW2 (without annotations)
+2)  Function to make the scatter plot---like the plot you graphed in HW2 (without annotations)
 
 For example, suppose the functions of my package are `data_function()` and `plot_function()`. BTW: give better names to your functions. Under this assumption, a user should be able to call my functions like so:
 
-```r
+``` r
 # Serena Williams data and plot
 serena = data_function("serena williams")
 plot_function(serena)
@@ -76,7 +76,8 @@ We will focus on writing tests for functions that handle the cleaning/processing
 To write your tests, we recommend that you use the following mockup JS content.
 
 **`FemalePlayerCareer.JS`**
-```text
+
+``` text
 # A few entries from a female player career's JS file
 var morematchmx = [["19951030", "Canadian Open", "Carpet", "W", "L", "", "", "WC", "Q1", "6-1 6-1", "3", "Anne Miller", "149", "7", "", "R", "19770119", "", "USA", "0", "", "", "", "", "", "", "1995-W-WT-CAN-02A-1995-013"],
   ["19970307", "Indian Wells", "Hard", "W", "L", "", "", "WC", "Q1", "6-4 6-0", "3", "Alexia Dechaume Balleret", "87", "", "", "R", "19700503", "", "FRA", "0", "", "", "", "", "", "", "1997-W-WT-USA-02A-1997-006"],
@@ -84,7 +85,8 @@ var morematchmx = [["19951030", "Canadian Open", "Carpet", "W", "L", "", "", "WC
 ```
 
 **`MalePlayerCareer.JS`**
-```text
+
+``` text
 # A few entries from a male player career's JS file
 var morematchmx = [["20010910", "Spain F10", "Hard", "S", "L", "", "", "WC", "R32", "2-6 7-5 6-2", "3", "Guillermo Platel", "731", "", "", "R", "22.264202601", "", "ESP", "0", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "2001-M-FU-ESP-10A-2001-002", "", "1", "1"],
   ["20010917", "Seville CH", "Clay", "C", "L", "", "", "WC", "R16", "3-6 6-1 6-3", "3", "Stefano Galvani", "161", "2", "", "R", "24.2902121834", "178", "ITA", "0", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "2", "", "", "", "2001-784-024", "", "2", "2"],
@@ -101,7 +103,7 @@ The *litmus test* of your hw3 submission will involve a direct installation from
 
 We'll run either the `"devtools"` function `install_github()` or the `"pak"` function `pack()`
 
-```r
+``` r
 # R package
 devtools::install_github("username/yourpackage")
 
@@ -113,7 +115,7 @@ pak::pak("username/yourpackage")
 
 To install a Python package directly from a GitHub repository, we'll use the `pip install` command prefixed with `git+` followed by your repository's URL.
 
-```bash
+``` bash
 # Python package
 pip install git+https://github.com/username/yourpackage.git
 ```
