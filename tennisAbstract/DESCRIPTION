@@ -1,11 +1,10 @@
 Package: tennisAbstract
-Title: What the Package Does (One Line, Title Case)
+Title: A Package to Recreate NYT Datavizs
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Charles", "Tao", , "charles_tao@berkeley.edu", role = c("aut", "cre"))
+Description: Gets the career matches of a given player (e.g. Serena Williams, Rafael Nadal) from tennisabstract.com, and makes an unannotated plot like the New York Times's data visualization of Homework 2.
+License: MIT + file LICENSE
 Config/roxygen2/version: 8.1.1
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
