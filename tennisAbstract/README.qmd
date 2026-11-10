@@ -22,7 +22,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: end -->
 
-The goal of tennisAbstract is to ...
+The goal of tennisAbstract is to retrieve the career matches of a given player (e.g. Serena Williams, Rafael Nadal) from tennisabstract.com, and make a plot like the NYT’s data visualization of HW2 (ignoring annotations).
 
 ## Installation
 
@@ -33,31 +33,6 @@ You can install the development version of tennisAbstract from [GitHub](https://
 pak::pak("UCB-stat159-f26/hw03-2-chikorita-commits")
 ```
 
-## Example
+## Reflections
 
-This is a basic example which shows you how to solve a common problem:
-
-```{r}
-#| label: example
-library(tennisAbstract)
-## basic example code
-```
-
-What is special about using `README.qmd` instead of just `README.md`? You can include R chunks like so:
-
-```{r}
-#| label: cars
-summary(cars)
-```
-
-You'll still need to render `README.qmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this.
-
-You can also embed plots, for example:
-
-```{r}
-#| label: pressure
-#| echo: false
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
+I learned that not only are female and male players different in on how the data was written, but also the format of the data is different. Female players are stored as a list in R, but male players are stored as a matrix in R. I also noticed most of the files downloaded do not download the player's date of birth, so I had to make the date of birth one of the arguments of the public functions.
